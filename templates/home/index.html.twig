@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<h1>Bienvenue {% if app.user == null %}
+    inconnu
+    {% else %}
+    {{ app.user.pseudo }}</h1> 
+{% endif %}
+    
+
+{% endblock %}
